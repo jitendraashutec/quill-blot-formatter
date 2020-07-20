@@ -1,11 +1,11 @@
 // @flow
 
-import BlotFormatter from '../BlotFormatter';
+import DeleteFormatter from '../DeleteFormatter';
 
 export default class Action {
-  formatter: BlotFormatter;
+  formatter: DeleteFormatter;
 
-  constructor(formatter: BlotFormatter) {
+  constructor(formatter: DeleteFormatter) {
     this.formatter = formatter;
   }
 

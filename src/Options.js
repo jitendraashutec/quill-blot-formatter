@@ -70,7 +70,7 @@ const DefaultOptions: Options = {
     style: {
       position: 'absolute',
       boxSizing: 'border-box',
-      border: '1px dashed #444',
+      // border: '1px dashed #444',
     },
   },
   align: {

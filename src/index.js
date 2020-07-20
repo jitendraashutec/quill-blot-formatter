@@ -1,6 +1,6 @@
 // core
 export { default as DefaultOptions } from './Options';
-export { default } from './BlotFormatter';
+export { default } from './DeleteFormatter';
 
 // actions
 export { default as Action } from './actions/Action';

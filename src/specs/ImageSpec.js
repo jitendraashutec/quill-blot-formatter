@@ -1,12 +1,12 @@
 // @flow
 
 import BlotSpec from './BlotSpec';
-import BlotFormatter from '../BlotFormatter';
+import DeleteFormatter from '../DeleteFormatter';
 
 export default class ImageSpec extends BlotSpec {
   img: ?HTMLElement;
 
-  constructor(formatter: BlotFormatter) {
+  constructor(formatter: DeleteFormatter) {
     super(formatter);
     this.img = null;
   }

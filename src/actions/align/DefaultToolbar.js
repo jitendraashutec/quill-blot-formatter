@@ -3,7 +3,7 @@
 import { Toolbar } from './Toolbar';
 import { Aligner } from './Aligner';
 import type { Alignment } from './Alignment';
-import BlotFormatter from '../../BlotFormatter';
+import BlotFormatter from '../../DeleteFormatter';
 
 export default class DefaultToolbar implements Toolbar {
   toolbar: ?HTMLElement;

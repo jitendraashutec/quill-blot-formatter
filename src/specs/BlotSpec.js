@@ -1,15 +1,15 @@
 // @flow
 
-import BlotFormatter from '../BlotFormatter';
+import DeleteFormatter from '../DeleteFormatter';
 import Action from '../actions/Action';
 import AlignAction from '../actions/align/AlignAction';
 import ResizeAction from '../actions/ResizeAction';
 import DeleteAction from '../actions/DeleteAction';
 
 export default class BlotSpec {
-  formatter: BlotFormatter;
+  formatter: DeleteFormatter;
 
-  constructor(formatter: BlotFormatter) {
+  constructor(formatter: DeleteFormatter) {
     this.formatter = formatter;
   }
 

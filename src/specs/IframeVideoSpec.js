@@ -1,10 +1,10 @@
 // @flow
 
 import UnclickableBlotSpec from './UnclickableBlotSpec';
-import BlotFormatter from '../BlotFormatter';
+import DeleteFormatter from '../DeleteFormatter';
 
 export default class IframeVideoSpec extends UnclickableBlotSpec {
-  constructor(formatter: BlotFormatter) {
+  constructor(formatter: DeleteFormatter) {
     super(formatter, 'iframe.ql-video');
   }
 }

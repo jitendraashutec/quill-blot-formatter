@@ -10,6 +10,7 @@ export default class DeleteAction extends Action {
   }
 
   onDestroy() {
+    console.log('DESTORY CALLED');
     document.removeEventListener('keyup', this.onKeyUp);
     this.formatter.quill.root.removeEventListener('input', this.onKeyUp);
   }

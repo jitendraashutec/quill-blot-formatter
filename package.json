@@ -1,5 +1,5 @@
 {
-  "name": "quill-blot-formatter",
+  "name": "delete-blot-formatter",
   "version": "1.0.4",
   "description": "a module for the Quill text editor to allow blots to be reformatted. Built in formatters: resize and realign. Built in blot support: images and iframe videos.",
   "main": "./dist/index.js",
@@ -54,16 +54,16 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "build": "yarn clean && yarn build:babel && yarn build:webpack && yarn build:copy-flow-source && yarn build:copy-ts-defs",
+    "build": "npm run clean && npm run build:babel && npm run build:webpack && npm run build:copy-flow-source && npm run build:copy-ts-defs",
     "build:babel": "babel src/ --out-dir dist",
     "build:copy-flow-source": "flow-copy-source --verbose src dist",
     "build:copy-ts-defs": "copyfiles index.d.ts dist",
     "build:webpack": "webpack -p --progress --colors",
     "clean": "rimraf dist",
     "dev:babel": "babel --watch src/ --out-dir dist",
-    "dev:webpack": "yarn dev:delay && webpack --progress --colors --watch",
+    "dev:webpack": "npm run dev:delay && webpack --progress --colors --watch",
     "dev:delay": "node -e \"setTimeout(() => {}, 3000)\"",
-    "prepublishOnly": "yarn build",
-    "start": "yarn clean && yarn npm-run-all --race --parallel dev:babel dev:webpack"
+    "prepublishOnly": "npm run build",
+    "start": "npm run clean && npm run npm-run-all --race --parallel dev:babel dev:webpack"
   }
 }

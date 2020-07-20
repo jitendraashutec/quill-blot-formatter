@@ -1,7 +1,7 @@
 // @flow
 
 import BlotSpec from './BlotSpec';
-import BlotFormatter from '../BlotFormatter';
+import DeleteFormatter from '../DeleteFormatter';
 
 const MOUSE_ENTER_ATTRIBUTE = 'data-blot-formatter-unclickable-bound';
 const PROXY_IMAGE_CLASS = 'blot-formatter__proxy-image';
@@ -12,7 +12,7 @@ export default class UnclickableBlotSpec extends BlotSpec {
   nextUnclickable: ?HTMLElement;
   proxyImage: HTMLImageElement;
 
-  constructor(formatter: BlotFormatter, selector: string) {
+  constructor(formatter: DeleteFormatter, selector: string) {
     super(formatter);
     this.selector = selector;
     this.unclickable = null;
